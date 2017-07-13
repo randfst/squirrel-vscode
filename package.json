@@ -1,0 +1,32 @@
+{
+    "name": "nut",
+    "displayName": "Squirrel",
+    "description": "Squirrel Programming Language (squirrel-lang.org)",
+    "version": "0.0.1",
+    "publisher": "None",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "squirrel",
+            "aliases": ["Squirrel", "squirrel"],
+            "extensions": [".nut"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "squirrel",
+            "scopeName": "source.nut",
+            "path": "./syntaxes/Squirrel.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "squirrel",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
